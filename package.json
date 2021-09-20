@@ -9,7 +9,8 @@
     "@opam/dune": "^2.9.1",
     "@opam/dune-configurator": "^2.9.1",
     "@opam/js_of_ocaml": "^3.10.0",
-    "@opam/js_of_ocaml-ppx": "^3.10.0"
+    "@opam/js_of_ocaml-ppx": "^3.10.0",
+    "@opam/libbinaryen": "*"
   },
   "devDependencies": {
     "@opam/js_of_ocaml-compiler": "^3.10.0",

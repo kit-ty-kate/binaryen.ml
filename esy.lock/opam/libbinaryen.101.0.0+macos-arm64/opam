@@ -1,0 +1,23 @@
+opam-version: "2.0"
+homepage: "https://github.com/grain-lang/binaryen-build"
+maintainer: "blaine@grain-lang.org"
+bug-reports: "https://github.com/grain-lang/binaryen-build/issues"
+dev-repo: "git+https://github.com/grain-lang/binaryen-build.git"
+authors: [
+  "Blaine Bublitz"
+]
+build: [
+  ["dune" "build" "-p" name "-j" jobs]
+]
+depends: [
+  "dune" {>= "2.9.1"}
+]
+synopsis: "The libbinaryen library package"
+description: """
+This is used by the binaryen package to trigger the install of the
+libbinaryen library."""
+url {
+  src: "https://github.com/grain-lang/binaryen-build/releases/download/testing/macos-arm64.tar.xz"
+  checksum: "md5=7a417caf95f836b9b2e4efd5a09a49b4"
+}
+available: arch = "arm64" & os = "macos"

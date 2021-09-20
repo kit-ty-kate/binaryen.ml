@@ -1,5 +1,5 @@
 {
-  "checksum": "1bd1a43d19b51200e53370392a9a7750",
+  "checksum": "79e2973f5e938ff59b9f3a71c1a7d991",
   "root": "@grain/binaryen.ml@link-dev:./package.json",
   "node": {
     "ocaml@4.12.0@d41d8cd9": {
@@ -825,6 +825,28 @@
         "@opam/dune@opam:2.9.1@1e504822"
       ]
     },
+    "@opam/libbinaryen@opam:101.0.0+macos-arm64@972947c6": {
+      "id": "@opam/libbinaryen@opam:101.0.0+macos-arm64@972947c6",
+      "name": "@opam/libbinaryen",
+      "version": "opam:101.0.0+macos-arm64",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://opam.ocaml.org/cache/md5/7a/7a417caf95f836b9b2e4efd5a09a49b4#md5:7a417caf95f836b9b2e4efd5a09a49b4",
+          "archive:https://github.com/grain-lang/binaryen-build/releases/download/testing/macos-arm64.tar.xz#md5:7a417caf95f836b9b2e4efd5a09a49b4"
+        ],
+        "opam": {
+          "name": "libbinaryen",
+          "version": "101.0.0+macos-arm64",
+          "path": "esy.lock/opam/libbinaryen.101.0.0+macos-arm64"
+        }
+      },
+      "overrides": [],
+      "dependencies": [
+        "@opam/dune@opam:2.9.1@1e504822", "@esy-ocaml/substs@0.0.1@d41d8cd9"
+      ],
+      "devDependencies": [ "@opam/dune@opam:2.9.1@1e504822" ]
+    },
     "@opam/js_of_ocaml-ppx@opam:3.10.0@83146b55": {
       "id": "@opam/js_of_ocaml-ppx@opam:3.10.0@83146b55",
       "name": "@opam/js_of_ocaml-ppx",
@@ -1305,6 +1327,7 @@
       "overrides": [],
       "dependencies": [
         "ocaml@4.12.0@d41d8cd9",
+        "@opam/libbinaryen@opam:101.0.0+macos-arm64@972947c6",
         "@opam/js_of_ocaml-ppx@opam:3.10.0@83146b55",
         "@opam/js_of_ocaml@opam:3.10.0@70da2390",
         "@opam/dune-configurator@opam:2.9.1@b7cf7a02",
